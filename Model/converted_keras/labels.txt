@@ -1,3 +1,5 @@
-0 t-72
-1 BTR
-2 BMP
+0 vehicle_type
+1 btr
+2 tank
+3 cope_cage
+4 destroyed

@@ -1,1 +1,8 @@
 keras==3.14.1
+notebook
+ipykernel
+matplotlib
+scikit-learn
+pandas
+tensorflow
+numpy
