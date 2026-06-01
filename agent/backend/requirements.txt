@@ -1,0 +1,8 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pillow==10.4.0
+# TensorFlow is required to load/run your Keras model.
+# If you're already using a workspace-level environment with tensorflow installed,
+# you can omit it here.
+tensorflow==2.21.0
+numpy==1.26.4

@@ -1,0 +1,41 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+agent/backend/.venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE/editor ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Data / large assets (keep these out of GitHub) ---
+# If you need these on another machine, copy them via external drive/cloud storage.
+Celeb Faces Dataset/
+AFVs/
+categories/
+dataset/images/
+
+# --- Optional: if you generate big intermediate artifacts ---
+# Uncomment if you don't want to commit model exports.
+exported_model/
+*.pdf
+# --- Logs ---
+*.log
