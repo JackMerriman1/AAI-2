@@ -14,13 +14,9 @@ build/
 node_modules/
 dist/
 build/
-<<<<<<< Updated upstream
-
-=======
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> Stashed changes
 
 # --- Virtual environments ---
 .venv/
