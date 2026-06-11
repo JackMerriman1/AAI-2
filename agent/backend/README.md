@@ -2,6 +2,8 @@
 
 Serves your trained multi-head Keras model behind an HTTP API so a frontend can upload an image and receive probabilities.
 
+This repo also includes a Vite/React frontend at `agent/frontend`.
+
 ## Layout
 
 - `src/main.py` – FastAPI app with `/health` and `/predict`
@@ -33,6 +35,32 @@ uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Note: TensorFlow must be compatible with your Python version. This project pins a TensorFlow version that supports Python 3.13.
+
+## Run API + Frontend together
+
+Use two terminals from the workspace root.
+
+### Terminal 1 — API (FastAPI)
+
+```bash
+cd agent/backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Terminal 2 — Frontend (Vite)
+
+```bash
+cd agent/frontend
+npm install
+npm run dev
+```
+
+Frontend URL: `http://localhost:3000`
+
+The frontend currently posts to `http://localhost:8000/predict` (see `agent/frontend/src/App.jsx`).
 
 ## API
 
